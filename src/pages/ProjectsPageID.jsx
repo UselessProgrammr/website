@@ -13,27 +13,27 @@ function ProjectsPageID(image) {
         {
         "name" : "Neon Line Studios" , 
         "description" : "An entire website I have made for a graphic design studio. By the way, the entire experience was wonderful! They were so friendly it was a pleasure to work with them." ,
-        "image" :  "https://uselessprogrammr.github.io/website/src/assets/images/neonLinePage-ryZpiWF3.png"
+        "image" :  "https://uselessprogrammr.github.io/website/assets/neonLinePage-ryZpiWF3.png"
      },
         {
         "name" : "Project 2" , 
         "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem perspiciatis architecto sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione eligendi nobis cum corrupti, eius est hic nesciunt, optio, eum molestias aut maxime eos quidem at numquam odit doloribus consequatur error." ,
-        "image" :  "/src/assets/images/jr-korpa-9XngoIpxcEo-unsplash.jpg"
+        "image" :  "https://uselessprogrammr.github.io/website/assets/jr-korpa-9XngoIpxcEo-unsplash-cQ-nXO77.jpg"
      },
         {
         "name" : "Project 3" , 
         "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem perspiciatis architecto sapiente!" ,
-        "image" :  "/src/assets/images/jr-korpa-9XngoIpxcEo-unsplash.jpg"
+        "image" :  "https://uselessprogrammr.github.io/website/assets/jr-korpa-9XngoIpxcEo-unsplash-cQ-nXO77.jpg"
      },
         {
         "name" : "Project 4" , 
         "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem perspiciatis architecto sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione eligendi nobis cum corrupti, eius est hic nesciunt, optio, eum molestias aut maxime eos quidem at numquam odit doloribus consequatur error." ,
-        "image" : "/src/assets/images/jr-korpa-9XngoIpxcEo-unsplash.jpg"
+        "image" : "https://uselessprogrammr.github.io/website/assets/jr-korpa-9XngoIpxcEo-unsplash-cQ-nXO77.jpg"
      },
         {
         "name" : "Project 5" , 
         "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem perspiciatis architecto sapiente!" ,
-        "image" :  "/src/assets/images/jr-korpa-9XngoIpxcEo-unsplash.jpg"
+        "image" :  "https://uselessprogrammr.github.io/website/assets/jr-korpa-9XngoIpxcEo-unsplash-cQ-nXO77.jpg"
      },
         
     ]
