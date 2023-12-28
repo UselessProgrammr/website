@@ -9,7 +9,7 @@ const FrontPage = ({pageSection}) => {
                     <h4 className="text-center"><span>Front-End</span> Web Developer</h4>   
                 </div>
                 
-                <video className="front-page-video brightnessIntro" autoPlay loop muted src="src/assets/videos/frontpagevideo.mp4"></video>
+                <video className="front-page-video brightnessIntro" autoPlay loop muted src="website/src/assets/videos/frontpagevideo.mp4"></video>
             </section>    
         </>
 
