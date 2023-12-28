@@ -41,13 +41,13 @@ function App() {
             {showMenu ? (<MainMenu isOpen={isOpen} closingMenu={closingMenu} />) : (null)}
 
             <Routes>
-                <Route path="/website" element={<Home pageRef={pageRef} anotherPageRef={anotherPageRef} />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/personalprojects" element={<PersonalProjects />} />
-                <Route path="/experience" element={<Experience />} />
-                <Route path="/projectid" element={<ProjectsPageID />} />
-                <Route path="/projectid/:id" element={<ProjectsPageID />} />
-                <Route path="/goaway" element={<GoAway />} />
+                <Route path="/website/" element={<Home pageRef={pageRef} anotherPageRef={anotherPageRef} />} />
+                <Route path="/website/contact/" element={<Contact />} />
+                <Route path="/website/personalprojects/" element={<PersonalProjects />} />
+                <Route path="/website/experience/" element={<Experience />} />
+                <Route path="/website/projectid/" element={<ProjectsPageID />} />
+                <Route path="/website/projectid/:id/" element={<ProjectsPageID />} />
+                <Route path="/website/goaway/" element={<GoAway />} />
             </Routes>
 
         </>
