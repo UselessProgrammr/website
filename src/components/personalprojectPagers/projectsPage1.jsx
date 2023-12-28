@@ -1,4 +1,5 @@
 import previewImage from "../../assets/images/jr-korpa-9XngoIpxcEo-unsplash.jpg";
+import neonLineIMG from "../../assets/images/neonLinePage.png";
 import "../../css/projects.css"
 import { Link } from "react-router-dom";
 
@@ -19,7 +20,7 @@ function ProjectsPage1() {
 
                     <div id="project1" className=" project row2-column1">
                         <Link to="/projectid/1">
-                            <img className="project-img" src="src/assets/images/neonLinePage.PNG" alt="" />
+                            <img className="project-img" src= {neonLineIMG} alt="" />
                         
 
                         <div className="project-previewDesc">
