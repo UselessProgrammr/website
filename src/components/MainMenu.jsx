@@ -21,7 +21,7 @@ const MainMenu = ({isOpen, closingMenu}) => {
                         <ul className="main-menu-ul">    
                             <div>
                                 <h1 className="text-center main-menu-title blackUnderLineAnimation">Menu</h1>
-                                <Link to="/"><li onClick={() => {closingMenu()}}><p  className="blackUnderLineAnimation">Home</p></li></Link>
+                                <Link to="/website"><li onClick={() => {closingMenu()}}><p  className="blackUnderLineAnimation">Home</p></li></Link>
                                 <Link to="/contact"><li onClick={() => {closingMenu()}}><p  className="blackUnderLineAnimation">Contact</p></li></Link>
                                 <Link to="/personalprojects "><li onClick={() => {closingMenu()}}><p  className="blackUnderLineAnimation">Personal Projects</p></li></Link>
                                 <Link to="/experience"><li onClick={() => {closingMenu()}}><p className="blackUnderLineAnimation" >Experience</p></li></Link>

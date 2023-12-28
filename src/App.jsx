@@ -41,7 +41,7 @@ function App() {
             {showMenu ? (<MainMenu isOpen={isOpen} closingMenu={closingMenu} />) : (null)}
 
             <Routes>
-                <Route path="/" element={<Home pageRef={pageRef} anotherPageRef={anotherPageRef} />} />
+                <Route path="/website" element={<Home pageRef={pageRef} anotherPageRef={anotherPageRef} />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/personalprojects" element={<PersonalProjects />} />
                 <Route path="/experience" element={<Experience />} />
