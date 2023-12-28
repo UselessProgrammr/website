@@ -19,7 +19,7 @@ function ProjectsPage1() {
 
 
                     <div id="project1" className=" project row2-column1">
-                        <Link to="/projectid/1">
+                        <Link to="/website/projectid/1">
                             <img className="project-img" src= {neonLineIMG} alt="" />
                         
 
@@ -30,7 +30,7 @@ function ProjectsPage1() {
                         </Link>
                     </div>
                     <div id="project2" className=" project ">
-                        <Link to="/projectid/2">
+                        <Link to="/website/projectid/2">
                             <img className="project-img" src={previewImage} alt="" />
                         
 
@@ -41,7 +41,7 @@ function ProjectsPage1() {
                         </Link>
                     </div>
                     <div id="project3" className=" project bigproject">
-                        <Link to="/projectid/3">
+                        <Link to="/website/projectid/3">
                             <img className="project-img" src={previewImage} alt="" />
                         
 
@@ -53,7 +53,7 @@ function ProjectsPage1() {
                     </div>
 
                     <div id="project4" className=" project ">
-                        <Link to="/projectid/4">
+                        <Link to="/website/projectid/4">
                             <img className="project-img" src={previewImage} alt="" />
                         
 
@@ -64,7 +64,7 @@ function ProjectsPage1() {
                         </Link>
                     </div>
                     <div id="project5" className=" project row1column2">
-                        <Link to="/projectid/5">
+                        <Link to="/website/projectid/5">
                             <img className="project-img" src={previewImage} alt="" />
                         
 
