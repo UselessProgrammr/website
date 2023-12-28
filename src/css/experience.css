@@ -1,0 +1,86 @@
+body {
+    background-color: var(--background-color);
+}
+
+ul {
+    padding: 0;
+}
+
+.rowXPlist {
+    text-align: center;
+
+    padding: 5em;
+}
+
+.rowXPobject {
+    position: relative;
+}
+
+.rowXPobject::after {
+    content: "";
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    border-right: 1px solid rgba(255, 255, 255, 0.548);
+}
+
+.XPContent {
+    max-width: 700px;
+}
+
+.XPContent ul {
+    animation-name: XPcontentAnim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animations */
+ 
+@keyframes XPcontentAnim {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width : 1000px) {
+    .rowXPlist {
+        flex-direction: column;
+        padding-top: 5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+
+        gap: 1em;
+    }
+
+    .rowXPlist h2 {
+        border: 1px solid rgba(255, 255, 255, 0.351);
+        padding: 0.5em 0em;
+
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #43434335, #43434335);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #43434335, #00000028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    }
+
+    .rowXPlist h2:hover {
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #43434335, #43434335);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #43434335, #000000da);
+        background: -moz-linear-gradient(to bottom , #43434335, #000000da);
+    }
+
+    .rowXPobject::after {
+        content: "";
+        width: 0px;
+        height: 0px;
+    }
+}

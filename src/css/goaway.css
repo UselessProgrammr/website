@@ -1,0 +1,221 @@
+
+.jumscare-page .cursedText , .cursedText2 , .cursedText3  {
+    animation-name: cursedAnimationText;
+    animation-duration: 6s;
+    animation-timing-function: step-end;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+}
+
+
+.cursedText {
+    transform: translateX(-50%);
+    margin: -30px auto;
+    font-size: large;
+    opacity: 0;
+    animation-delay: 4s;
+}
+.cursedText2 {
+    transform: translateX(-40%);
+    margin: -40px auto;
+    font-size: large;
+    opacity: 0;
+    animation-delay: 6s;
+}
+.cursedText3 {
+    transform: translateX(-60%);
+    margin: -10px auto;
+    font-size: large;
+    opacity: 0;
+    animation-delay: 8s;
+}
+
+.jumscare-page {
+    display: flex;
+
+}
+
+.actual-jumpscare-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50% , -50%);
+}
+
+.actual-jumpscare-container .white-box {
+    background-color: white;
+    padding: 3em 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50% , -50%);
+    z-index: -1;
+}
+
+.white-box {
+    animation-name: whiteBox;
+    animation-delay: 20s;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-timing-function: ease;
+
+    cursor: pointer;
+}
+
+.cursedTitle-1 {
+    position: absolute;
+
+
+    white-space: nowrap;
+
+    top: 0;
+    right: 0;
+    opacity: 0;
+
+    font-size: 105px;
+    animation-name: cursedAnimationTitle1;
+    animation-duration: 8s;
+    animation-timing-function: step-end;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.cursedTitle-2 {
+    position: absolute;
+
+    white-space: nowrap;
+    top: 100px;
+    right: 0;
+    font-size: 105px;
+    opacity: 0;
+
+    animation-name: cursedAnimationTitle2;
+    animation-duration: 4s;
+    animation-timing-function: step-end;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3.2s;
+}
+
+.cursedColumn2 {
+    position: relative;
+}
+
+/* ANIMATIONS */
+
+@keyframes cursedAnimationText {
+    0% {
+
+        opacity: 0;
+        transform: skewX(-16deg)   translate(100px , 50px);
+    }
+
+    20% {
+
+        opacity: 0;
+        transform: skewX(0deg)  translate(10px , 100px);
+        
+    }
+
+    40% {
+        opacity: 1;
+        transform: skewX(0deg)  translate(200px , 100px);
+        
+    }
+    80% {
+        opacity: 1;
+        transform: skewX(-16deg)  translate(10px , 10px);
+        
+    }
+    90% {
+
+        opacity: 0;
+        transform: skewX(0deg)  translate(10px , 10px);
+        
+    }
+
+    100% {
+
+        opacity: 0;
+        transform: skewX(0deg)  translate(0px , 0px);
+        
+    }
+}
+@keyframes cursedAnimationTitle1 {
+    0% {
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 1;
+    }
+
+    40% {
+
+    }
+
+    60% {
+
+    }
+
+    80% {
+
+    }
+    99% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+@keyframes cursedAnimationTitle2 {
+    0% {
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+
+    }
+
+    80% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
+@keyframes whiteBox {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

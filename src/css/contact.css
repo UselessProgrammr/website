@@ -1,0 +1,205 @@
+
+.contactSquare {
+    display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: min-content;
+
+    justify-content: center;
+    align-content: center;
+
+    column-gap: 0px;
+    row-gap: 0px;
+    height: 100svh;
+
+    
+    
+}
+
+.contactUnit h5 {
+    padding: 2em 1em;
+    color: black;
+    margin: 0;
+    font-size: larger;
+    width: 250px;
+
+    text-align: center;
+
+}
+
+.contactUnit {
+    background-color: white;
+    box-shadow: 0px 0px 2px black;
+    display: flex;
+
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+    
+
+}
+
+.flex-even {
+    flex: 1;
+}
+
+.contactDesc {
+
+    background-color: rgba(252, 252, 252, 0.8);
+    position: absolute;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 200ms ease-in-out;
+
+    
+    width: 0px;
+    height: 100%;
+    z-index: -2;
+    opacity: 0;
+}
+
+.contactDesc-Leftcorner {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.contactDesc-Rightcorner {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.contactDesc p {
+    margin: 0;
+}
+
+
+
+.leftDesc {
+    transform: translateX(-90%);
+}
+
+.rightDesc {
+    transform: translateX(90%);
+}
+
+.contactUnit:hover .contactDesc {
+
+    width: 100%;
+    opacity: 1;
+
+}
+
+.copiedToast {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    background-color: white;
+    color: black;
+
+
+    padding: .5em 1em;
+
+    
+    border-radius: 10px;
+
+    animation-name: appearFromBottom;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.copiedToast p {
+    margin: auto;
+}
+
+.top-left-round-corner {
+    border-top-left-radius: 30px;
+}
+.top-right-round-corner {
+    border-top-right-radius: 30px;
+}
+.bottom-left-round-corner {
+    border-bottom-left-radius: 30px;
+}
+.bottom-right-round-corner {
+    border-bottom-right-radius: 30px;
+}
+
+/* ANIMATIONS */
+
+@keyframes appearFromBottom {
+    0% {
+
+        transform: translateY(50px) translateX(-50%);
+        opacity: 0;
+    }
+
+    10% {
+        
+        transform: translateY(0px) translateX(-50%);
+        opacity: 1;
+    }
+    80% {
+        
+        transform: translateY(0px) translateX(-50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(50px) translateX(-50%);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+
+    .contact-container {
+        overflow-x: hidden;
+    }
+    
+    .contactSquare {
+        grid-template-columns: auto ;
+        grid-template-rows: min-content;
+    }
+
+    .contactUnit {
+        transition: transform 1s ease-in-out;
+    }
+
+    .leftUnit:hover {
+        transform: translateX(-100%);
+    }
+
+    .rightUnit:hover {
+        transform: translateX(100%);
+    }
+
+    .leftDesc {
+        transform: translateX(100%);
+    }
+    
+    .rightDesc {
+        transform: translateX(-100%);
+    }
+    
+    .contactUnit:hover .contactDesc {
+
+        width: 100%;
+        opacity: 1;
+    
+    }
+
+    .top-left-round-corner , .top-right-round-corner , .bottom-left-round-corner , .bottom-right-round-corner , .contactDesc-Leftcorner , .contactDesc-Rightcorner {
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+
+
+}

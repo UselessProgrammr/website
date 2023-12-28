@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+
+/*     --background-color : rgb(22, 22, 22);
+    --main-font: 'Electrolize', sans-serif;
+    --plain-font: 'Playfair Display', serif;
+    --fancy-font: 'Beau Rivage', cursive;
+    --main-font: 'Black Ops One' , serif; */
+
+:root {
+    --background-color : rgb(22, 22, 22);
+    --main-font: 'Electrolize', sans-serif;
+    --plain-font: 'Playfair Display', serif;
+    --fancy-font: 'Beau Rivage', cursive;
+
+}
+
+.black-color , .black-color span {
+    color: rgb(0, 0, 0) !important;
+}
+
+.loadingScreenPage {
+    position: fixed;
+    z-index: 2000;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100svh;
+    
+    
+}
+
+.loadingScreenStyles {
+    fill : white; 
+    transition : width 500ms ease-in-out ; 
+    transform : rotate(45deg) ; 
+}
+
+body {
+    font-family: var(--plain-font);
+    overflow-x: hidden;
+}
+
+
+.ATlogo {
+    color:rgba(255, 255, 255, 0.749);
+    font-size: 25px;
+    font-family: var(--main-font);
+
+    overflow-y: hidden;
+
+
+
+}
+
+.main-menu-button {
+    cursor: pointer;
+}
+
+.firstLogoLetter , .secondLogoLetter {
+    display: inline-block;
+    transition: transform 250ms ease-out;
+}
+
+.ATlogo:hover .firstLogoLetter {
+    transform: translateY(-27px);
+}
+
+.ATlogo:hover .secondLogoLetter {
+    transform: translateY(27px);
+}
+
+.mainLogoAnim {
+    animation-name: mainLogoAnimation;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    
+}
+.mainLogoAnim2 {
+    animation-name: mainLogoAnimation2;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    
+}
+
+.button-border1 {
+    border: 1px solid rgba(255, 255, 255, 0.833);
+    padding: .5rem 2rem;
+
+}
+
+/* Main Menu */
+
+.left-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100svh;
+    z-index: 1;
+    animation-name: fromLeft;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+.closingMenu {
+    animation-name: vanishToLeft;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+}
+
+#loadingScreenSVG {
+    width: 0%;
+    animation-name: loadingScreen;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.left-menu .row , .main-menu ul {
+    height: 100%;
+    padding: 0;
+}
+
+.main-menu {
+    background-color: rgb(246, 246, 246);
+    position: relative;
+    padding: 3em 1em;
+    height: 100%;
+
+    color: black;
+    overflow: hidden;
+}
+
+ .main-menu::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url('../assets/svgs/abstract-8077884.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.2;
+    top: 30%;
+    left: 50%;
+    
+}
+
+
+.main-menu-title {
+    font-family: var(--main-font);
+    font-weight: 900;
+    width: auto;
+    cursor: default;
+}
+
+#menuSVG {
+    cursor: pointer;
+}
+
+#menuSVG:hover #menuLine1 {
+    width: 40px;
+}
+
+#menuSVG:hover #menuLine2 {
+    width: 20px;
+}
+
+.main-menu p {
+    font-size: 23px;
+    font-family: var(--main-font);
+    color: black;
+    font-weight: 500;
+
+}
+
+.main-menu h1 {
+    color: black;
+    margin-bottom: 1em;
+}
+
+.main-menu-backdrop {
+    background-color: rgba(0, 0, 0, 0.638);
+}
+
+.menu-footer {
+    opacity: 0.9;
+    font-family: var(--main-font);
+}
+
+.contact-number {
+    opacity: 0.7;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-menu-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-menu-ul a {
+    opacity: 0.8;
+}
+
+/* Animations */
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes vanishToLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes mainLogoAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateY(-27px);
+    }
+}
+@keyframes mainLogoAnimation2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateY(27px);
+    }
+}
+
+@keyframes loadingScreen {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 150%;
+    }
+}
+
+/* QUERIES */
+
+@media only screen and (max-width: 600px) {
+    .main-menu-backdrop {
+        display: none;
+    }
+
+    .main-navbar .px-5 {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+}
+
