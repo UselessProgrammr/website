@@ -13,7 +13,7 @@ function ProjectsPageID(image) {
         {
         "name" : "Neon Line Studios" , 
         "description" : "An entire website I have made for a graphic design studio. By the way, the entire experience was wonderful! They were so friendly it was a pleasure to work with them." ,
-        "image" :  "https://uselessprogrammr.github.io/website/src/assets/images/neonLinePage.PNG"
+        "image" :  "https://uselessprogrammr.github.io/website/src/assets/images/neonLinePage-ryZpiWF3.png"
      },
         {
         "name" : "Project 2" , 
