@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import "../css/goaway.css";
 import jumpscare from "../assets/jumpscare/fnaf-foxy.gif";
+import audiofile from "../assets/jumpscare/jumpscaresound.mp3";
 
 
 function GoAway() {
 
   const [displayProp , setDisplayProp] = useState("none");
-  const jumpscareAudio = new Audio("/src/assets/jumpscare/jumpscaresound.mp3")
+  const jumpscareAudio = new Audio(audiofile)
 
   function jumpscareFunction() {
     if (displayProp == "block") {
