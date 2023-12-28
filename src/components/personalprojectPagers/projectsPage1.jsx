@@ -19,7 +19,7 @@ function ProjectsPage1() {
 
                     <div id="project1" className=" project row2-column1">
                         <Link to="/projectid/1">
-                            <img className="project-img" src="/src/assets/images/neonLinePage.PNG" alt="" />
+                            <img className="project-img" src="src/assets/images/neonLinePage.PNG" alt="" />
                         
 
                         <div className="project-previewDesc">
