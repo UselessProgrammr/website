@@ -21,7 +21,7 @@ function FourthPage({pageSection}) {
                         <h1 className="contactPagerTitle">Contact Me</h1>
 
                         <button className="btn">
-                            <Link to="/contact" className="button-border1">Look.</Link>
+                            <Link to="/website/contact/" className="button-border1">Look.</Link>
                         </button>
                             
                     </div>
