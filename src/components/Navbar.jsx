@@ -27,7 +27,7 @@ const Navbar = ({ pageRef , anotherPageRef , openingMenu , showMenu }) => {
                     <span className="main-menu-button ms-2">menu</span> 
                     
                     </div>
-                    <div className="ATlogo mb-0 h1"><span ref={pageRef} className="firstLogoLetter">A</span><span ref={anotherPageRef} className="secondLogoLetter">T</span></div>
+                    <div className="ATlogo mb-0 h1"><span translate="no" ref={pageRef} className="firstLogoLetter">A</span><span translate="no" ref={anotherPageRef} className="secondLogoLetter">T</span></div>
                 </div>
             </nav>
         </>

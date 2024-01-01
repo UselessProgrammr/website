@@ -12,7 +12,7 @@ function ProjectsPageID(image) {
      },
         {
         "name" : "Neon Line Studios" , 
-        "description" : "An entire website I have made for a graphic design studio. By the way, the entire experience was wonderful! They were so friendly it was a pleasure to work with them." ,
+        "description" : "I developed a responsive website for a graphic design company. I used HTML, CSS, and JavaScript to create an attractive and user-friendly interface across various devices. Additionally, I implemented smooth animations and visual effects, just as the client desired, to enhance the user experience. It was a genuine pleasure working with them!" ,
         "image" :  "https://uselessprogrammr.github.io/website/assets/neonLinePage-ryZpiWF3.png"
      },
         {
@@ -42,18 +42,23 @@ function ProjectsPageID(image) {
     return (
         <>
             <section className="container pt-5">
-                <div className="row justify-content-between">
-                    <div className="col-md-4 p-5 projectText">
-                        <h2 className="mb-5"> {projects[id].name} </h2>
-                        <p>
+                <div className="row flex-wrap justify-content-between">
+                    <div className="col-lg-4 p-5 projectText">
+                        <h2 translate="no" className="mb-5"> {projects[id].name} </h2>
+                        <p className="projectID-text">
                             {projects[id].description}
                         </p>
+
+                        <a className="projectID-aLink" href="https://neonlinestudios.netlify.app/">Take me to the website!</a>
                             
                         
                     </div>
 
-                    <div className="col-md-8">
-                        <img className="projectImage" src={projects[id].image} alt="" />
+                    <div className="col-lg-8">
+                        <a href="https://neonlinestudios.netlify.app/">
+                            <img className="projectImage" src={projects[id].image} alt="" />
+                        </a>
+                        
                     </div>
                 </div>
             </section>

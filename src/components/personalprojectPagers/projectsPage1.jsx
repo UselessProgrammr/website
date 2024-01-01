@@ -24,7 +24,7 @@ function ProjectsPage1() {
                         
 
                         <div className="project-previewDesc">
-                            <h2>Neon Line Studios</h2>
+                            <h2 translate="no">Neon Line Studios</h2>
                             <p>An entire website I have made for a graphic design studio. They wanted a neon and colourful style. By the way, the entire experience was wonderful! They were so friendly it was a pleasure to work with them.</p>
                         </div>
                         </Link>
@@ -35,7 +35,7 @@ function ProjectsPage1() {
                         
 
                         <div className="project-previewDesc">
-                            <h2>Project 2</h2>
+                            <h2 translate="no">Project 2</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, error?</p>
                         </div>
                         </Link>
@@ -46,7 +46,7 @@ function ProjectsPage1() {
                         
 
                         <div className="project-previewDesc">
-                            <h2>Project 3</h2>
+                            <h2 translate="no">Project 3</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, error?</p>
                         </div>
                         </Link>
@@ -58,7 +58,7 @@ function ProjectsPage1() {
                         
 
                         <div className="project-previewDesc">
-                            <h2>Project 4</h2>
+                            <h2 translate="no">Project 4</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, error?</p>
                         </div>
                         </Link>
@@ -69,7 +69,7 @@ function ProjectsPage1() {
                         
 
                         <div className="project-previewDesc">
-                            <h2>Project 5</h2>
+                            <h2 translate="no">Project 5</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, error?</p>
                         </div>
                         </Link>

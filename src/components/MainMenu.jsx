@@ -25,7 +25,7 @@ const MainMenu = ({isOpen, closingMenu}) => {
                                 <Link to="/website/contact/"><li onClick={() => {closingMenu()}}><p  className="blackUnderLineAnimation">Contact</p></li></Link>
                                 <Link to="/website/personalprojects/"><li onClick={() => {closingMenu()}}><p  className="blackUnderLineAnimation">Personal Projects</p></li></Link>
                                 <Link to="/website/experience/"><li onClick={() => {closingMenu()}}><p className="blackUnderLineAnimation" >Experience</p></li></Link>
-                                {randomNum <= 2 ? <Link to="/website/goaway/"><li onClick={() => {closingMenu()}}><p  className="blackUnderLineAnimation">D̴̝̉ỏ̶̱̳̳̈̃͝n̸̠͉̳͗̇̇͜͝'̷̺͎̅t̴̼͎̒͊̑ ̶̙̦̗̉͜č̵̗̺͂̂͝o̸̢̯̙͍͐̽͆̔m̸̼̗̿̈́͌e̴̛̬̝ ̶̗̽̉͌͆͜h̴̛̞̱̋̆̏ͅe̶͇̣̓r̸̠̈́͐e̵͓̿̆͘̚</p></li></Link> : null}
+                                {randomNum <= 2 ? <Link to="/website/goaway/"><li onClick={() => {closingMenu()}}><p translate="no" className="blackUnderLineAnimation">D̴̝̉ỏ̶̱̳̳̈̃͝n̸̠͉̳͗̇̇͜͝'̷̺͎̅t̴̼͎̒͊̑ ̶̙̦̗̉͜č̵̗̺͂̂͝o̸̢̯̙͍͐̽͆̔m̸̼̗̿̈́͌e̴̛̬̝ ̶̗̽̉͌͆͜h̴̛̞̱̋̆̏ͅe̶͇̣̓r̸̠̈́͐e̵͓̿̆͘̚</p></li></Link> : null}
                                 <hr />
                             </div>
 

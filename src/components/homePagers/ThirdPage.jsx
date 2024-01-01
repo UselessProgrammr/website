@@ -52,7 +52,7 @@ function ThirdPage({pageSection}) {
 
                         </div>
                         <div onMouseEnter={() => complexBGanimation(3)} id="thirdPcolumn3" className="col-lg bg-changing-column">
-                            <h2 className="text-center">React</h2>
+                            <h2 translate="no" className="text-center">React</h2>
 
                         </div>
                         <div onMouseEnter={() => complexBGanimation(4)} id="thirdPcolumn4" className="col-md last-bg-changing-column">
